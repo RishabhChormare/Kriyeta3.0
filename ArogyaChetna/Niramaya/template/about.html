@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href={% static "file/about.css" %}>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+            <div class="nav-item border">
+                <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                <p>Home</p>
+            </a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h1 class="title"><u>About Us</u></h1>
+        <div class="about-content">
+            <div class="image">
+                <img src="ai.jpg" alt="AI Image">
+            </div>
+            <div class="content">
+                <p>
+                    Welcome to HealthTech Innovations!<br><br>
+                    At HealthTech Innovations, we’re on a mission to transform healthcare through the fusion of technology and compassionate care. Our vision is to empower patients, doctors, and healthcare professionals with innovative solutions that enhance accuracy, efficiency, and patient outcomes.<br><br>
+                </p>
+                <p id="more-text" style="display: none;">
+                    <strong>Who We Are</strong><br><br>
+                    <strong>The Bridge Builders:</strong><br>
+                    We’re a team of passionate engineers.<br>
+                    Our diverse backgrounds converge to create a harmonious blend of expertise.<br>
+                    Together, we bridge the gap between healthcare and technology.<br><br>
+                    <strong>Our Innovations</strong><br><br>
+                    🤖 <strong>AI-Driven Diagnostics:</strong><br>
+                    Our AI algorithms analyze medical images—X-rays, MRIs, and CT scans—with remarkable precision.<br>
+                    Early disease detection is our forte, ensuring timely interventions and better patient outcomes.<br>
+                    Imagine a world where diseases reveal themselves to us through pixels and patterns.<br><br>
+                    🔍 <strong>RFID Revolution:</strong><br>
+                    Our RFID tags are more than just wristbands; they’re guardians of patient safety.<br>
+                    Each tag carries a patient’s medical history, allergies, and current medications.<br>
+                    When a nurse scans a tag, they unlock a wealth of information, ensuring accurate medication administration.<br><br>
+                    <strong>Our Commitment</strong><br><br>
+                    🤝 <strong>Patient-Centric Approach:</strong><br>
+                    Every line of code we write, every RFID tag we deploy—it’s all for the patient.<br>
+                    We believe in personalized care, where technology serves humanity.<br>
+                    Our commitment extends beyond the hospital walls; it’s embedded in every heartbeat.<br><br>
+                </p>
+                <a href="javascript:void(0);" class="readmore" onclick="toggleReadMore()">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleReadMore() {
+            var moreText = document.getElementById("more-text");
+            var readMoreBtn = document.querySelector(".readmore");
+
+            if (moreText.style.display === "none") {
+                moreText.style.display = "block";
+                readMoreBtn.innerHTML = "Read Less";
+            } else {
+                moreText.style.display = "none";
+                readMoreBtn.innerHTML = "Read More";
+            }
+        }
+    </script>
+</body>
+</html>

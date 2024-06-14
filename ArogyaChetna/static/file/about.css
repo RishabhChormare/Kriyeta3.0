@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 60px;
+}
+
+.title {
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(85, 128, 167);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-item a {
+    text-decoration: none; /* Remove underline from links */
+}
+
+.nav-logo {
+    height: 100px;
+    width: 100px;
+}
+
+.logo {
+    background-image: url("logo.png");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.border {
+    border: 2px solid transparent;
+}
+
+.border:hover {
+    border: 2px solid white;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.nav-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-item i {
+    margin-right: 5px; /* Adjust as needed */
+    height: 20px; /* Adjust height as needed */
+    width: 20px; /* Adjust width as needed */
+}
+
+.nav-item p {
+    margin: 0;
+}
+
+.image {
+    flex: 1;
+    margin-right: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    max-width: 100%; /* Ensures the image does not overflow */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+.image img {
+    width: 100%;
+    height: auto; /* Maintains the aspect ratio */
+    transition: transform 0.3s ease;
+}
+
+.image:hover img {
+    transform: scale(1.1);
+}
+
+.content {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.content p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+#more-text {
+    display: none;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.readmore {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #137252;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.readmore:hover {
+    background-color: #ccbb25;
+}
+
+@media screen and (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .image, .content {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+}
