@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartBot chat</title>
+    <script src="https://cdn.botpreess.cloud/webchat/v1/inject.js">
+    </script>
+    <script>
+        window.botpressWebChat.init({
+            "composerPlaceholder":"chat with Smartbot",
+            "botConversationDescription": "Your personal health assistant",
+            "boltd": "e1e98523-55ec-43ac-9ed4-0db6e35ce023",
+            "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+            "messagingUrl":"https://messaging.botpress.cloud",
+            "clientId":"e1e98523-55ec-43ac-9ed4-0db6e35ce023",
+            "webhookId": "3d2056f6-f28f-47f3-bd66-513391e62f1e",
+            "lazySocket": true,
+            "themeName":"galaxy",
+            "botName":"SmartBot",
+            "website":"http://127.0.0.1:8000/recieve_rfid",
+            "frontendVersion":"v1",
+            "enableConversationDeletion": true,
+            "theme":"galaxy",
+            "themeColor":"#2563eb",
+            "allowedOrigins":[]
+        });
+    </script>
+</head>
+<body>
+    <!-- your html content here -->
+</body>
+</html>
